@@ -1,4 +1,4 @@
-package br.com.erpproject.project;
+package br.com.erp.comercialms;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
