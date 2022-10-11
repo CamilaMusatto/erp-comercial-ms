@@ -1,2 +1,8 @@
 server:
   port: 9080
+
+spring:
+  datasource:
+    url: 172.17.0.2
+    username: erp-comercial
+    password: password
