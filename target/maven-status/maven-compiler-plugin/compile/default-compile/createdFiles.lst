@@ -1,0 +1,13 @@
+br/com/erp/comercialms/core/entity/FuncionarioEntity.class
+br/com/erp/comercialms/core/usecase/BuscarClienteUsecase.class
+br/com/erp/comercialms/dataprovider/mapper/ClienteMapperImpl.class
+br/com/erp/comercialms/ProjectApplication.class
+br/com/erp/comercialms/core/entity/ClienteEntity.class
+br/com/erp/comercialms/dataprovider/repository/ClienteRepository.class
+br/com/erp/comercialms/core/entity/EnderecoEntity.class
+br/com/erp/comercialms/core/usecase/gateway/ClienteGateway.class
+br/com/erp/comercialms/dataprovider/table/ClienteTable.class
+br/com/erp/comercialms/dataprovider/mapper/ClienteMapper.class
+br/com/erp/comercialms/core/entity/ProdutoEntity.class
+br/com/erp/comercialms/core/entity/PedidoEntity.class
+br/com/erp/comercialms/dataprovider/ClienteDataprovider.class

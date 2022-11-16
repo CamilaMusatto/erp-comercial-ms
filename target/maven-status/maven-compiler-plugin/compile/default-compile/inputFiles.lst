@@ -1,0 +1,12 @@
+/home/giovanni/Documents/Camila/erp-comercial-ms/src/main/java/br/com/erp/comercialms/core/entity/FuncionarioEntity.java
+/home/giovanni/Documents/Camila/erp-comercial-ms/src/main/java/br/com/erp/comercialms/dataprovider/mapper/ClienteMapper.java
+/home/giovanni/Documents/Camila/erp-comercial-ms/src/main/java/br/com/erp/comercialms/dataprovider/repository/ClienteRepository.java
+/home/giovanni/Documents/Camila/erp-comercial-ms/src/main/java/br/com/erp/comercialms/ProjectApplication.java
+/home/giovanni/Documents/Camila/erp-comercial-ms/src/main/java/br/com/erp/comercialms/dataprovider/table/ClienteTable.java
+/home/giovanni/Documents/Camila/erp-comercial-ms/src/main/java/br/com/erp/comercialms/core/entity/ProdutoEntity.java
+/home/giovanni/Documents/Camila/erp-comercial-ms/src/main/java/br/com/erp/comercialms/core/entity/ClienteEntity.java
+/home/giovanni/Documents/Camila/erp-comercial-ms/src/main/java/br/com/erp/comercialms/core/usecase/BuscarClienteUsecase.java
+/home/giovanni/Documents/Camila/erp-comercial-ms/src/main/java/br/com/erp/comercialms/dataprovider/ClienteDataprovider.java
+/home/giovanni/Documents/Camila/erp-comercial-ms/src/main/java/br/com/erp/comercialms/core/entity/PedidoEntity.java
+/home/giovanni/Documents/Camila/erp-comercial-ms/src/main/java/br/com/erp/comercialms/core/entity/EnderecoEntity.java
+/home/giovanni/Documents/Camila/erp-comercial-ms/src/main/java/br/com/erp/comercialms/core/usecase/gateway/ClienteGateway.java
