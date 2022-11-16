@@ -1,2 +1,15 @@
 server:
   port: 9080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.17.0.2:3306/erp_comercial?useTimezone=true&serverTimezone=UTC
+    username: root
+    password: Enzo@8709
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        show_sql: false
