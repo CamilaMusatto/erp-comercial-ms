@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-11-16T17:32:10-0300",
-    comments = "version: 1.4.1.Final, compiler: javac, environment: Java 17.0.5 (Amazon.com Inc.)"
+    date = "2022-11-16T21:06:51-0300",
+    comments = "version: 1.5.3.Final, compiler: javac, environment: Java 17.0.5 (Amazon.com Inc.)"
 )
 @Component
 public class ClienteMapperImpl implements ClienteMapper {
@@ -19,8 +19,39 @@ public class ClienteMapperImpl implements ClienteMapper {
             return null;
         }
 
-        ClienteEntity clienteEntity = new ClienteEntity();
+        ClienteEntity.ClienteEntityBuilder clienteEntity = ClienteEntity.builder();
 
-        return clienteEntity;
+        clienteEntity.id( table.getId() );
+        clienteEntity.nome( table.getNome() );
+        clienteEntity.telefone( table.getTelefone() );
+        clienteEntity.rg( table.getRg() );
+        clienteEntity.cpf( table.getCpf() );
+        clienteEntity.cnpj( table.getCnpj() );
+        clienteEntity.email( table.getEmail() );
+        clienteEntity.dataNasc( table.getDataNasc() );
+        clienteEntity.sexo( table.getSexo() );
+
+        return clienteEntity.build();
+    }
+
+    @Override
+    public ClienteTable clienteEntityToClienteTable(ClienteEntity entity) {
+        if ( entity == null ) {
+            return null;
+        }
+
+        ClienteTable clienteTable = new ClienteTable();
+
+        clienteTable.setId( entity.getId() );
+        clienteTable.setNome( entity.getNome() );
+        clienteTable.setTelefone( entity.getTelefone() );
+        clienteTable.setRg( entity.getRg() );
+        clienteTable.setCpf( entity.getCpf() );
+        clienteTable.setCnpj( entity.getCnpj() );
+        clienteTable.setEmail( entity.getEmail() );
+        clienteTable.setDataNasc( entity.getDataNasc() );
+        clienteTable.setSexo( entity.getSexo() );
+
+        return clienteTable;
     }
 }

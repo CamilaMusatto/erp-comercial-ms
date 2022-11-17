@@ -11,21 +11,19 @@ import org.springframework.stereotype.Component;
 public class ClienteDataprovider implements ClienteGateway {
 
     private ClienteRepository clienteRepository;
-    private ClienteMapper clienteMapper;
     @Autowired
-    public ClienteDataprovider(ClienteRepository clienteRepository, ClienteMapper clienteMapper) {
+    public ClienteDataprovider(ClienteRepository clienteRepository) {
         this.clienteRepository = clienteRepository;
-        this.clienteMapper = clienteMapper;
     }
 
     @Override
     public ClienteEntity buscarClienteById(Long id) {
-        return clienteMapper.clienteTableToClienteEntity(clienteRepository.findById(id).get());
+        return ClienteMapper.INSTANCE.clienteTableToClienteEntity(clienteRepository.findById(id).get());
     }
 
     @Override
     public void salvarCliente(ClienteEntity entity) {
-
+        clienteRepository.save(ClienteMapper.INSTANCE.clienteEntityToClienteTable(entity));
     }
 
 }

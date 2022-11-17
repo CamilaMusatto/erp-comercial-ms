@@ -8,6 +8,9 @@ import org.mapstruct.factory.Mappers;
 @Mapper(componentModel = "spring")
 public interface ClienteMapper {
 
+    ClienteMapper INSTANCE = Mappers.getMapper( ClienteMapper.class );
+
     ClienteEntity clienteTableToClienteEntity(ClienteTable table);
+    ClienteTable clienteEntityToClienteTable(ClienteEntity entity);
 
 }

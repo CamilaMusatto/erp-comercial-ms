@@ -1,5 +1,7 @@
-package br.com.erp.comercialms.core.entity;
+package br.com.erp.comercialms.entrypoint.http;
 
+import br.com.erp.comercialms.core.entity.EnderecoEntity;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,7 +13,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ClienteEntity {
+public class ClienteHttp {
 
     private Long id;
     private String nome;
@@ -21,10 +23,8 @@ public class ClienteEntity {
     private String cnpj;
     private EnderecoEntity endereco;
     private String email;
+    @JsonProperty("data_nascimento")
     private LocalDate dataNasc;
     private String sexo;
-
-
-
 
 }
