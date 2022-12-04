@@ -17,7 +17,7 @@ public class CadastrarProdutoUsecase {
     }
 
     public void cadastrarProduto(ProdutoEntity produtoEntity) {
-        produtoGateway.salvarProduto(produtoEntity);
+        produtoGateway.cadastrarProduto(produtoEntity);
     }
 
 

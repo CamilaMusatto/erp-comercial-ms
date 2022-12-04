@@ -7,5 +7,5 @@ import org.springframework.stereotype.Component;
 public interface ProdutoGateway {
 
     ProdutoEntity buscarProdutoById(Long id);
-    void salvarProduto(ProdutoEntity produtoEntity);
+    void cadastrarProduto(ProdutoEntity produtoEntity);
 }

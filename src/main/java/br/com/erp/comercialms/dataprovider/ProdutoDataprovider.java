@@ -23,7 +23,7 @@ public class ProdutoDataprovider implements ProdutoGateway {
     }
 
     @Override
-    public void salvarProduto(ProdutoEntity entity) {
+    public void cadastrarProduto(ProdutoEntity entity) {
         produtoRepository.save(ProdutoMapper.INSTANCE.produtoEntityToProdutoTable(entity));
     }
 }
